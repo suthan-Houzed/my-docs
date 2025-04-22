@@ -9,7 +9,7 @@ export default function ColorModeToggleWrapper(props) {
   return (
     <>
       {isSignedIn ? (
-        <div style={{ marginRight: 15 }}>
+        <div style={{ marginRight: 15 , marginTop: 7 }}>
           <UserButton afterSignOutUrl="/" />
         </div>
       ) : (

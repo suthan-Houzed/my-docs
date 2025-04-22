@@ -7,7 +7,7 @@
 
 
   const config: Config = {
-    title: 'houzed.ai',
+    title: 'houzed Docs', 
     tagline: 'Your Housing Co-Pilot',
     favicon: 'img/logo-brand.svg',
 
@@ -54,7 +54,7 @@
       // Replace with your project's social card
       image: 'img/houzed-social-card.jpg',
       navbar: {
-        title: 'houzed.ai',
+        title: 'houzed Docs',
         logo: {
           alt: 'houzed.ai Logo',
           src: 'img/logo-brand.svg',
@@ -68,11 +68,11 @@
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/houzed',
+            href: 'https://github.com/suthan-Houzed/my-docs',
             label: 'GitHub',
             position: 'right',
           },
-        ],
+        ]
       },
       footer: {
         style: 'light',
