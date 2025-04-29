@@ -12,13 +12,6 @@
 /* Make the layout take full height for flex centering */
 
 
-
-
-/* #__docusaurus,
-.main-wrapper {
-  height: 100vh;
-} */
-
 :root {
   --ifm-color-primary: #213d91;
   --ifm-color-primary-dark: #1e3783;

@@ -1,66 +1,98 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import React from 'react';
 
-type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
-};
-
-const FeatureList: FeatureItem[] = [
-  {
-    title: 'Plan',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-       Our AI Agent helps buyers, sellers, and their agents plan and track home showings, appointments, and schedules. Listing agents can onboard their properties and set AI-driven booking preferences, while buyer agents can leverage the AI Agent to efficiently plan and book showings on behalf of their clients.
-      </>
-    ),
-  },
-  {
-    title: 'Search',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Ask our AI agent to search for homes and track new listings based on your preferences. Houzed.ai helps buyers manage their home search while also assisting agents in organizing and streamlining searches for all their clients. Buyers and agents can analyze watchlisted properties to identify the best matches and efficiently plan showings.
-      </>
-    ),
-  },
-  {
-    title: 'Show',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-       AI Agent tracks check-ins, sends property alerts, and keeps you on schedule. It summarizes showing feedback, highlights key property features, and analyzes data to provide insights for smarter home-buying decisions.
-      </>
-    ),
-  },
-];
-
-function Feature({title, Svg, description}: FeatureItem) {
+export default function HomepageFeatures(): React.ReactNode {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <section className="container grid grid-cols-1 margin-top--xl content-evenly gap-10">
+      {/* Header */}
+      <div className="text-center">
+        <h1 className="text--2xl margin-bottom--lg">Powerful Features</h1>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          Our platform provides everything you need to streamline your real estate experience.
+        </p>
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
+      <div className="container margin-top--xl">
+        {/* Feature 1 */}
+        <div className="grid grid-cols-2 gap-12 margin-bottom--xl">
+          <div className="place-self-center">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Search Properties</h3>
+            <p className="text-gray-600">
+              Powerful search functionality with filters for location, price, features, and more.
+              Find the perfect property with our intelligent search engine.
+            </p>
+          </div>
+          <div className="justify-self-end place-self-start w-2/3 h-2/3">
+            <img src="/img/best-place.svg" alt="Search" className=" object-contain" />
+          </div>
+        </div>
 
-export default function HomepageFeatures(): ReactNode {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+        {/* Feature 2 */}
+        <div className="grid grid-cols-2 gap-12 items-center margin-bottom--xl">
+          <div className="place-self-start w-2/3 h-2/3">
+            <img src="/img/booked.svg" alt="Calendar" className="object-contain" />
+          </div>
+          <div className="place-self-center">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Plan Your Schedule</h3>
+            <p className="text-gray-600">
+              Organize property viewings with our integrated calendar. Auto-scheduling and
+              reminders keep you on track for all your property appointments.
+            </p>
+          </div>
+        </div>
+
+        {/* Feature 3 */}
+        <div className="grid grid-cols-2 gap-12 margin-bottom--xl">
+          <div className="place-self-center">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Property Showings</h3>
+            <p className="text-gray-600">
+              Streamline your property showings with geo-fencing technology, automated feedback
+              collection, and performance analytics for agents.
+            </p>
+          </div>
+          <div className="justify-self-end place-self-start w-2/3 h-2/3">
+            <img src="/img/small-town.svg" alt="Showings" className="object-contain" />
+          </div>
+        </div>
+
+        {/* Feature 4 */}
+        <div className="grid grid-cols-2 gap-12 margin-bottom--xl">
+          <div className="place-self-start w-2/3 h-2/3">
+            <img src="/img/server-API.svg" alt="API" className="object-contain" />
+          </div>
+          <div className="place-self-center">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Developer API</h3>
+            <p className="text-gray-600">
+              Full-featured REST API with documentation to integrate our services into your own
+              apps and workflows.
+            </p>
+          </div>
+        </div>
+
+        {/* Feature 5 */}
+        <div className="grid grid-cols-2 gap-12 items-center margin-bottom--xl">
+          <div className="place-self-center">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Secure Authentication</h3>
+            <p className="text-gray-600">
+              Enterprise-grade security with Clerk authentication. Multi-factor authentication,
+              social logins, and user management made simple.
+            </p>
+          </div>
+          <div className="justify-self-end place-self-start w-2/3 h-2/3">
+            <img src="/img/secure-login.svg" alt="Clerk" className="object-contain" />
+          </div>
+        </div>
+
+        {/* Feature 6 */}
+        <div className="grid grid-cols-2 gap-12 items-center margin-bottom--xl">
+          <div className="place-self-start w-2/3 h-2/3">
+            <img src="/img/dashboard.svg" alt="Analytics" className="object-contain" />
+          </div>
+          <div className="place-self-center">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Analytics Dashboard</h3>
+            <p className="text-gray-600">
+              Gain insights with our analytics tools. Track performance, monitor market trends,
+              and optimize your property business.
+            </p>
+          </div>
         </div>
       </div>
     </section>

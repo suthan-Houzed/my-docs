@@ -1,3 +1,7 @@
+---
+title: Plan
+requiresAuth: true
+---
 # 📅 Plan
 
 Our AI Agent helps buyers, sellers, and their agents plan and track home showings, appointments, and schedules. Listing agents can onboard their properties and set AI-driven booking preferences, while buyer agents can leverage the AI Agent to efficiently plan and book showings on behalf of their clients.

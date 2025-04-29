@@ -1,5 +1,0 @@
-/* This makes Tailwind's h-screen utility work as expected */
-#__docusaurus,
-.main-wrapper {
-  height: 100vh;
-}

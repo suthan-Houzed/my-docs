@@ -104,6 +104,64 @@ const sidebars: SidebarsConfig = {
       ],
     },
   ],
+  developer: [
+    {type: 'doc', id: 'developer/intro', label: 'Overview'},
+    {
+      type: 'category',
+      label: 'API',
+      items: [
+        {
+          type: 'doc',
+          id: 'developer/authentication',
+          label: 'Authentication',
+        },
+        {
+          type: 'doc',
+          id: 'developer/webhooks',
+          label: 'Webhooks',
+        },
+        {
+          type: 'doc',
+          id: 'developer/api-reference',
+          label: 'API Reference',
+        },
+      ],
+    },
+  ],
+  'product-guides': [
+    {
+      type: 'doc',
+      id: 'product-guides/intro',
+      label: 'Introduction',
+    },
+    {
+      type: 'doc',
+      id: 'product-guides/quick-start',
+      label: 'Quick Start Guide',
+    },
+    {
+      type: 'doc',
+      id: 'product-guides/core-features',
+      label: 'Core Features',
+    }
+  ],
+  'ux-flow': [
+    {
+      type: 'doc',
+      id: 'ux-flow/intro',
+      label: 'Introduction',
+    },
+    {
+      type: 'doc',
+      id: 'ux-flow/home-search-flow',
+      label: 'Home Search Flow',
+    },
+    {
+      type: 'doc',
+      id: 'ux-flow/property-viewing-flow',
+      label: 'Property Viewing Flow',
+    }
+  ],
 };
 
 export default sidebars;
